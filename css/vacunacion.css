@@ -1,0 +1,65 @@
+#calendario {
+    width: 100%;
+    margin: auto;
+}
+
+#calendario .fc-h-event {
+    text-align: center;
+    background-color: #03644f;
+    border-color: #03644f;
+}
+
+#calendario .fc-h-event:hover {
+    background-color: #049c7c;
+    font-weight: bold;
+}
+
+#calendario .fc-button {
+    background-color: #03644f;
+}
+
+#calendario .fc-button:hover {
+    background-color: #049c7c;
+}
+
+#calendario .fc-today-button:disabled:hover {
+    background-color: #03644f;
+}
+
+#calendario .fc-right {
+    margin-top: 0.5em;
+}
+
+#calendario .fc-right .fc-today-button {
+    margin: 0em 1.5em;
+}
+
+#calendario .fc-button-group {
+    margin: 0em 0.75em;
+}
+
+#calendario .fc-button:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#calendario .fc-header-toolbar {
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+}
+
+@media screen and (min-width:47em) {
+    #calendario .fc-header-toolbar {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #calendario .fc-right {
+        margin-top: 0;
+    }
+    #calendario {
+        width: 80%;
+    }
+}

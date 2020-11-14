@@ -43,7 +43,7 @@ input[type=search] {
     border-radius: 5px;
 }
 
-.enfermedad p{
+.enfermedad p {
     text-align: left;
     margin-left: 10px;
 }
@@ -64,8 +64,8 @@ h4 {
     margin: 15px 0px;
 }
 
-@media screen and (min-width:47em){
-    .contenedor{
+@media screen and (min-width:47em) {
+    .contenedor {
         width: 80%;
     }
     .enfermedad {

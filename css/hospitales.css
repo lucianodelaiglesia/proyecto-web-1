@@ -8,8 +8,151 @@
     width: 100%;
     height: 25em;
 }
-@media screen and (min-width: 47em){
-    .mapa iframe{
+
+.listado ul {
+    background-color: white;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin: 0.5em;
+}
+
+.listado li {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 0.5em;
+    border: 4px solid #03644f;
+}
+
+.listado a {
+    color: #03644f;
+}
+
+.listado a:hover {
+    background-color: #03644f;
+    color: white;
+}
+
+.oscurecer {
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+
+#popups p {
+    text-align: left;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    color: white;
+}
+
+#popups a {
+    cursor: pointer;
+}
+
+#popups h2 {
+    color: white;
+}
+
+#popups .cerrar {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/x.png");
+    background-size: cover;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+#popups img {
+    margin-top: 5px;
+    width: 80%;
+}
+
+.popup1 {
+    background-color: #03644f;
+    width: 80%;
+    margin-left: 10%;
+    height: 300px;
+    border: 2px solid #049c7c;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    top: 15%;
+    display: none;
+}
+
+.popup2 {
+    background-color: #03644f;
+    width: 80%;
+    margin-left: 10%;
+    height: 300px;
+    border: 2px solid #049c7c;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    top: 15%;
+    display: none;
+}
+
+.popup3 {
+    background-color: #03644f;
+    width: 80%;
+    margin-left: 10%;
+    height: 300px;
+    border: 2px solid #049c7c;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    top: 15%;
+    display: none;
+}
+
+@media screen and (min-width: 32em) {
+    #popups img {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 47em) {
+    .mapa iframe {
         width: 75%;
+    }
+    .listado {
+        margin-bottom: 0.5em;
+    }
+    .listado ul {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .listado li {
+        margin-bottom: 0;
+        cursor: pointer;
+        border: none;
+        background: none;
+    }
+    .listado a {
+        color: #03644f;
+        text-decoration: underline;
+    }
+    #popups img {
+        width: 70%;
+    }
+    .popup1 {
+        background-color: #03644f;
+        width: 30%;
+        margin-left: 35%;
+    }
+    .popup2 {
+        background-color: #03644f;
+        width: 30%;
+        margin-left: 35%;
+    }
+    .popup3 {
+        background-color: #03644f;
+        width: 30%;
+        margin-left: 35%;
     }
 }

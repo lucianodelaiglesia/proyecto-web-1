@@ -147,7 +147,7 @@ select {
     display: inline;
 }
 
-#dyc{
+#dyc {
     display: none;
     justify-content: space-between;
     grid-area: dyc;
