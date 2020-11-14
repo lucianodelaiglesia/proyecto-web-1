@@ -5,6 +5,11 @@
 }
 
 .mapa iframe {
-    width: 75%;
+    width: 100%;
     height: 25em;
+}
+@media screen and (min-width: 47em){
+    .mapa iframe{
+        width: 75%;
+    }
 }

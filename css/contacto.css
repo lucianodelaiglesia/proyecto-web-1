@@ -7,25 +7,12 @@ h2 {
 }
 
 .contenedor {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 500px;
-}
-
-.div1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    display: block;
+    text-align: center;
 }
 
 .div2 img {
-    display: block;
-    height: 75%;
-    margin: auto;
-    opacity: 0.8;
+    display: none;
 }
 
 .div3 p {
@@ -34,30 +21,24 @@ h2 {
 }
 
 .div3 img {
-    width: 15%;
-    opacity: 0.8;
+    width: 50px;
+    opacity: 1;
     margin: 10px 15px;
 }
 
-.div3 img:hover{
-    opacity: 1;
-    cursor: pointer;
-}
-form {
-    width: 100%;
-}
-
 .formulario {
-    color: #03644f;
+    color: black;
     margin: 5px 0;
     padding: 5px;
 }
 
 .formulario input {
-    margin-left: 5px;
+    margin-top: 5px;
     border: none;
     border-bottom: 2px solid #03644f;
-    color: #03644f;
+    color: black;
+    font-size: 1em;
+    text-align: center;
 }
 
 .formulario textarea {
@@ -79,25 +60,14 @@ form {
     border-radius: 15%;
 }
 
-.enviar input:hover {
-    background-color: white;
-    border: 2px solid #03644f;
-    color: #03644f;
-}
-
-::placeholder {
-    color: #03644f;
-    opacity: 0.7;
-}
-
 .mapa {
     display: block;
     text-align: center;
-    margin-bottom: 15px;
+    margin: 15px 0px;
 }
 
 .mapa iframe {
-    width: 75%;
+    width: 100%;
     height: 25em;
 }
 
@@ -106,6 +76,52 @@ h3 {
     margin-bottom: 15px;
 }
 
-#datos{
+#datos {
     text-decoration: underline;
+    margin-top: 25px;
+}
+
+#mensaje {
+    margin-top: 15px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (min-width:60em) {
+    .mapa iframe {
+        width: 75%;
+    }
+    .contenedor {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .div2 img {
+        display: block;
+        height: 300px;
+        margin: auto;
+        opacity: 0.8;
+    }
+    .div3 {
+        text-align: left;
+    }
+    .div3 p {
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    .div3 img {
+        opacity: 0.8;
+        margin: 10px 15px;
+    }
+    .div3 img:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+    .enviar input:hover {
+        background-color: white;
+        border: 2px solid #03644f;
+        color: #03644f;
+    }
 }

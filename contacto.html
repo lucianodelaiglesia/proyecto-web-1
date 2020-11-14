@@ -6,13 +6,17 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/contacto.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <header>
         <section id="header">
-            <h1><img src="img/logo.png"> Contacto</h1>
-            <div>
+            <div class="logo">
+                <img src="img/logo.png">
+                <h1>Contacto</h1>
+            </div>
+            <div class="buscar">
                 <form action="enfermedad.html" method="post" enctype="application/x-www-form-urlencoded"
                     autocomplete="off" target="_blank">
                     <input list="buscador" name="buscador">
@@ -35,24 +39,26 @@
                 <li><a href="contacto.html" target="_blank">CONTACTO</a></li>
             </ul>
         </nav>
+        <a class="desplegable"></a>
     </header>
     <main>
         <article>
             <h2>Contactate con nosotros</h2>
             <div class="contenedor">
                 <div class="div1">
-                    <form action="#" method="post" enctype="application/x-www-form-urlencoded" autocomplete="off">
+                    <form action="#" method="post" enctype="application/x-www-form-urlencoded" autocomplete="off"
+                        onsubmit="return validacion()">
                         <div class="formulario">
                             <label for="nombre">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
                         </div>
                         <div class="formulario">
                             <label for="apellido">Apellido:</label>
-                            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
+                            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
                         </div>
                         <div class="formulario">
                             <label for="correo">Email:</label>
-                            <input type="email" id="correo" name="correo" placeholder="ejemplo@email.com" required>
+                            <input type="email" id="correo" name="correo" placeholder="ejemplo@email.com">
                         </div>
                         <div class="formulario">
                             <label for="sexo">Sexo:</label>
@@ -62,21 +68,22 @@
                         </div>
                         <div class="formulario">
                             <label for="number">Edad:</label>
-                            <input type="number" id="edad" name="edad" placeholder="Su edad" min="0" max="100">
+                            <input type="number" id="edad" name="edad" placeholder="Su edad" min="0" max="1000">
                         </div>
                         <div class="formulario">
-                            <label for="test">Resultado del test:</label>
-                            <input type="radio" class="test" name="test" value="Positivo">+
-                            <input type="radio" class="test" name="test" value="Negativo">-
-                            <input type="radio" class="test" name="test" value="No Realizado">N/R
+                            <label for="telefono">Teléfono:</label>
+                            <input type="text" id="telefono" name="telefono" placeholder="1234-5678">
                         </div>
                         <div class="formulario">
-                            <label for="consulta">Consulta:</label><br></br>
-                            <textarea name="consulta" cols="25" row="5"></textarea>
+                            <label for="consulta">Consulta:</label>
+                            <textarea id="consulta" cols="25" row="20" onkeyup="contar()" maxlength="1000"></textarea>
+                            <p><span id="caracteres">1000</span>/1000</p>
                         </div>
                         <div class="enviar">
                             <input type="submit" value="Enviar">
                         </div>
+                        <div id="mensaje" class="error"></div>
+                    </form>
                 </div>
                 <div class="div2">
                     <img src=" img/asistencia.png">
@@ -103,14 +110,14 @@
     </main>
     <footer>
         <div class="div-footer">
-            <div class="col">
+            <div class="integrantes">
                 <h5>Integrantes</h5>
                 <ol>
                     <li>Luciano de la Iglesia</li>
                     <li>DNI: 40536830</li>
                 </ol>
             </div>
-            <div class="col">
+            <div class="menu-inferior">
                 <h5>Menu Inferior</h5>
                 <ol>
                     <li><a href="index.html" target="_blank">INICIO</a></li>
@@ -120,14 +127,19 @@
                     <li><a href="contacto.html" target="_blank">CONTACTO</a></li>
                 </ol>
             </div>
-            <div class="col">
+            <div class="redes-sociales">
                 <h5>Redes Sociales</h5>
-                <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png"></a>
-                <a href="https://twitter.com" target="_blank"><img src="img/twitter.png"></a>
+                <div class="redes">
+                    <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="img/twitter.png"></a>
+                </div>
             </div>
         </div>
     </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/contacto.js"></script>
 </body>
 
 </html>

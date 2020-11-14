@@ -3,7 +3,7 @@
     justify-content: space-around;
     flex-direction: column;
     margin: auto;
-    width: 80%;
+    width: 100%;
 }
 
 .buscador-enfermedades {
@@ -29,24 +29,23 @@ input[type=search] {
 
 .enfermedad {
     padding: 5px;
-    display: flex;
-    width: 100%;
+    display: block;
+    text-align: center;
     background-color: #049c7c;
     color: white;
     margin: 15px 0px;
 }
 
-.enfermedad:hover {
-    transform: scale(1.05);
-    box-shadow: 10px 10px 13px -1px rgba(179, 179, 179, 1);
-}
-
 .enfermedad img {
     width: 200px;
     height: 200px;
-    margin-right: 25px;
     border: 2px solid black;
     border-radius: 5px;
+}
+
+.enfermedad p{
+    text-align: left;
+    margin-left: 10px;
 }
 
 .enfermedad input {
@@ -56,17 +55,35 @@ input[type=search] {
     font-weight: bold;
     padding: 5px 5px;
     border-radius: 5px;
-    cursor: pointer;
-    margin-top: 50px;
-}
-
-.enfermedad input:hover {
-    background-color: #049c7c;
-    color: white;
+    margin-top: 15px;
 }
 
 h4 {
     text-align: center;
     color: white;
     margin: 15px 0px;
+}
+
+@media screen and (min-width:47em){
+    .contenedor{
+        width: 80%;
+    }
+    .enfermedad {
+        display: flex;
+    }
+    .enfermedad:hover {
+        transform: scale(1.05);
+        box-shadow: 10px 10px 13px -1px rgba(179, 179, 179, 1);
+    }
+    .enfermedad img {
+        margin-right: 25px;
+    }
+    .enfermedad input {
+        cursor: pointer;
+        margin-top: 50px;
+    }
+    .enfermedad input:hover {
+        background-color: #049c7c;
+        color: white;
+    }
 }

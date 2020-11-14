@@ -15,9 +15,9 @@ h2 {
 
 ul {
     background-color: #049c7c;
-    display: flex;
+    display: block;
     justify-content: center;
-    padding: 9px;
+    padding: 0px;
 }
 
 ul li {
@@ -26,14 +26,39 @@ ul li {
 }
 
 ul li a {
+    display: block;
     color: white;
-    padding: 10px;
+    padding: 9px;
     text-decoration: none;
 }
 
 ul li a:hover {
-    color: #049c7c;
+    color: #03644f;
     background-color: white;
+}
+
+.desplegable {
+    width: 30px;
+    height: 30px;
+    background-color: #03644f;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 55px;
+    right: 0px;
+    margin: auto;
+    border: 2px solid white;
+    background-image: url(../img/hamburger.gif);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.desplegable:hover {
+    background-color: #049c7c;
+}
+
+.menu {
+    display: none;
 }
 
 body {
@@ -42,20 +67,18 @@ body {
 }
 
 nav {
-    border-bottom: 2px solid #03644f;
+    border-bottom: 4px solid #03644f;
 }
 
 #header {
-    display: flex;
-    justify-content: space-around;
     background-color: #03644f;
-    padding: 20px;
+    padding: 10px;
     color: white;
 }
 
 #header img {
-    height: 20px;
-    width: 40px;
+    height: 40px;
+    width: 60px;
 }
 
 input[list=buscador] {
@@ -85,11 +108,24 @@ input[list=buscador] {
 }
 
 .div-footer {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-areas: "integrantes menu-inferior" "redes-sociales redes-sociales";
     background-color: #03644f;
     padding: 10px;
     border-top: 4px solid #049c7c;
+}
+
+.integrantes {
+    grid-area: integrantes;
+}
+
+.menu-inferior {
+    grid-area: menu-inferior;
+}
+
+.redes-sociales {
+    grid-area: redes-sociales;
+    text-align: center;
 }
 
 h5 {
@@ -99,14 +135,13 @@ h5 {
     text-align: center;
 }
 
-.col img {
+.redes img {
     height: 50px;
     width: 50px;
     padding: 10px;
-    opacity: 0.6;
 }
 
-.col img:hover {
+.redes img:hover {
     opacity: 1;
 }
 
@@ -121,7 +156,62 @@ ol li a {
     color: white;
     text-decoration: none;
 }
-#calendario img{
+
+#calendario img {
     margin: 15px 0px;
     width: 100%;
+}
+
+.logo {
+    display: block;
+    text-align: center;
+}
+
+.logo h1 {
+    display: none;
+}
+
+.buscar {
+    text-align: center;
+}
+
+@media screen and (max-width:46em) {
+    input[list=buscador] {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:47em) {
+    #header {
+        display: flex;
+        justify-content: space-around;
+        max-width: 100%;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+    .desplegable {
+        display: none;
+    }
+    .menu {
+        display: block !important;
+    }
+    .logo {
+        display: flex;
+    }
+    .logo h1 {
+        padding: 5px;
+        display: flex;
+    }
+    .div-footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .redes img {
+        height: 50px;
+        width: 50px;
+        padding: 10px;
+        opacity: 0.6;
+    }
 }

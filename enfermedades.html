@@ -6,15 +6,19 @@
     <title>Enfermedades</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/enfermedades.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <header>
         <section id="header">
-            <h1><img src="img/logo.png"> Enfermedades</h1>
-            <div>
-                <form action="enfermedad.html" method="post" enctype="application/x-www-form-urlencoded" autocomplete="off"
-                    target="_blank">
+            <div class="logo">
+                <img src="img/logo.png">
+                <h1>Enfermedades</h1>
+            </div>
+            <div class="buscar">
+                <form action="enfermedad.html" method="post" enctype="application/x-www-form-urlencoded"
+                    autocomplete="off" target="_blank">
                     <input list="buscador" name="buscador">
                     <datalist id="buscador">
                         <option value="Enfermedad1">
@@ -35,6 +39,7 @@
                 <li><a href="contacto.html" target="_blank">CONTACTO</a></li>
             </ul>
         </nav>
+        <a class="desplegable"></a>
     </header>
     <main>
         <h2>Lista de enfermedades</h2>
@@ -112,14 +117,14 @@
     </main>
     <footer>
         <div class="div-footer">
-            <div class="col">
+            <div class="integrantes">
                 <h5>Integrantes</h5>
                 <ol>
                     <li>Luciano de la Iglesia</li>
                     <li>DNI: 40536830</li>
                 </ol>
             </div>
-            <div class="col">
+            <div class="menu-inferior">
                 <h5>Menu Inferior</h5>
                 <ol>
                     <li><a href="index.html" target="_blank">INICIO</a></li>
@@ -129,14 +134,18 @@
                     <li><a href="contacto.html" target="_blank">CONTACTO</a></li>
                 </ol>
             </div>
-            <div class="col">
+            <div class="redes-sociales">
                 <h5>Redes Sociales</h5>
-                <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png"></a>
-                <a href="https://twitter.com" target="_blank"><img src="img/twitter.png"></a>
+                <div class="redes">
+                    <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="img/twitter.png"></a>
+                </div>
             </div>
         </div>
     </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>
