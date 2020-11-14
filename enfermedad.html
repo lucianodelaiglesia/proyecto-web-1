@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Enfermedad</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/enfermedad.css">
+</head>
+
+<body>
+    <header>
+        <section id="header">
+            <h1><img src="img/logo.png"> Enfermedad</h1>
+            <div>
+                <form action="enfermedad.html" method="post" enctype="application/x-www-form-urlencoded"
+                    autocomplete="off" target="_blank">
+                    <input list="buscador" name="buscador">
+                    <datalist id="buscador">
+                        <option value="Enfermedad1">
+                        <option value="Enfermedad2">
+                        <option value="Enfermedad3">
+                        <option value="Enfermedad4">
+                    </datalist>
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
+        </section>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" target="_blank">INICIO</a></li>
+                <li><a href="enfermedades.html" target="_blank">ENFERMEDADES</a></li>
+                <li><a href="vacunacion.html" target="_blank">VACUNACION</a></li>
+                <li><a href="hospitales.html" target="_blank">HOSPITALES</a></li>
+                <li><a href="contacto.html" target="_blank">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Nombre de Enfermedad</h2>
+        <div class="enfermedad">
+            <div>
+                <img src="img/asma.jpg">
+            </div>
+            <div>
+                <h4>Enfermedad</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Massa enim nec dui nunc mattis enim ut. Pretium fusce id velit ut. Sed velit
+                    dignissim sodales ut eu sem integer. Viverra vitae congue eu consequat ac felis donec et. Sed tempus
+                    urna et pharetra. A iaculis at erat pellentesque adipiscing. Sagittis vitae et leo duis ut diam. Sit
+                    amet dictum sit amet justo donec enim diam vulputate. Nulla malesuada pellentesque elit eget gravida
+                    cum sociis natoque. Imperdiet massa tincidunt nunc pulvinar sapien et ligula.
+
+                    Enim ut tellus elementum sagittis vitae et leo. Purus semper eget duis at tellus at urna condimentum
+                    mattis. Lorem ipsum dolor sit amet consectetur adipiscing. Blandit volutpat maecenas volutpat
+                    blandit aliquam etiam. Fringilla urna porttitor rhoncus dolor purus non enim. Quam elementum
+                    pulvinar etiam non. Vitae purus faucibus ornare suspendisse sed nisi lacus. Feugiat sed lectus
+                    vestibulum mattis ullamcorper velit sed. Tellus rutrum tellus pellentesque eu tincidunt tortor
+                    aliquam. Congue eu consequat ac felis donec et odio pellentesque. Morbi tristique senectus et netus
+                    et malesuada fames ac turpis.
+                </p>
+            </div>
+        </div>
+        <h3>Formulario de detección (TEST) de Coronavirus (COVID19)</h3>
+        <div class="cont">
+            <div class="sintomas">
+                <p>Hola usuario! Si tienes síntomas de XXXX o has estado en contacto con una persona afectada deberías
+                    hacer un control y seguimiento diario de tus síntomas. Esta aplicación te permitirá hacer un
+                    seguimiento de la evolución de los síntomas y te dará las indicaciones y consejos a seguir en cada
+                    caso. El uso de este servicio supone la aceptación de los términos y la política de privacidad
+                    descritos en <a href="contacto.html">'Ver las condiciones y políticas'</a></p>
+                <h3 id="sintomas">Síntomas</h3>
+                <div>
+                    <img src="img/24-fiebre-dolor-garganta.png">
+                    <img src="img/25-fiebre-dificultad-respirar.png">
+                </div>
+                <img src="img/23-fiebre-tos.png" id="tos">
+            </div>
+            <div class="test">
+                <form action="#" method="post" enctype="application/x-www-form-urlencoded" autocomplete="off">
+                    <div class="contenedor-grid">
+                        <div class="apyn">
+                            <label for="apyn">Nombre y Apellido:</label>
+                            <input type="text" id="apyn" name="apyn" required>
+                        </div>
+                        <div class="dni">
+                            <label for="dni">DNI:</label>
+                            <input type="number" id="dni" name="dni" required>
+                        </div>
+                        <div class="telefono">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="number" id="telefono" name="telefono" required>
+                        </div>
+                        <div class="sexo">
+                            <label for="sexo">Sexo:</label>
+                            <input type="radio" class="sexo" name="sexo" value="Masculino">M
+                            <input type="radio" class="sexo" name="sexo" value="Femenino">F
+                            <input type="radio" class="sexo" name="sexo" value="Otro">Otro
+                        </div>
+                        <div class="edad">
+                            <label for="number">Edad:</label>
+                            <input type="number" id="edad" name="edad" min="0" max="100">
+                        </div>
+                        <div class="exterior">
+                            <label for="exterior">¿Ha viajado al exterior de la Republica Argentina?</label>
+                            <input type="radio" class="exterior" name="exterior" value="Si">Sí
+                            <input type="radio" class="exterior" name="exterior" value="No">No
+                        </div>
+                        <div class="paises">
+                            <label for="paises">Paises visitados</label>
+                            <input list="paises" name="paises">
+                            <datalist id="paises">
+                                <option value="España">
+                                <option value="China">
+                                <option value="Italia">
+                                <option value="Estados Unidos">
+                                <option value="Peru">
+                            </datalist>
+                        </div>
+                        <div class="lista-sintomas">
+                            <a>Por favor, indica los síntomas que presentes:</a>
+                            <div>
+                                <label for="sintoma1">¿Tuviste fiebre mayor a 38 grados?</label>
+                                <input type="radio" class="sintoma1" name="sintoma1" value="Si">Sí
+                                <input type="radio" class="sintoma1" name="sintoma1" value="No">No
+                            </div>
+                            <div>
+                                <label for="sintoma2">¿Tuviste dolor de cabeza?</label>
+                                <input type="radio" class="sintoma2" name="sintoma2" value="Si">Sí
+                                <input type="radio" class="sintoma2" name="sintoma2" value="No">No
+                            </div>
+                            <div>
+                                <label for="sintoma3">¿Tuviste una tos persistente?</label>
+                                <input type="radio" class="sintoma3" name="sintoma3" value="Si">Sí
+                                <input type="radio" class="sintoma3" name="sintoma3" value="No">No
+                            </div>
+                            <div>
+                                <label for="sintoma4">¿Tuviste dolor de garganta?</label>
+                                <input type="radio" class="sintoma4" name="sintoma4" value="Si">Sí
+                                <input type="radio" class="sintoma4" name="sintoma4" value="No">No
+                            </div>
+                            <div>
+                                <label for="sintoma5">¿Tuviste dificultad para respirar?</label>
+                                <input type="radio" class="sintoma5" name="sintoma5" value="Si">Sí
+                                <input type="radio" class="sintoma5" name="sintoma5" value="No">No
+                            </div>
+                        </div>
+                        <div class="direccion">
+                            <label for="direccion">Dirección</label>
+                            <input type="text" id="direccion" name="direccion" required>
+                        </div>
+                        <div class="ciudad">
+                            <label for="ciudad">Ciudad</label>
+                            <input type="text" id="ciudad" name="ciudad" required>
+                        </div>
+                    </div>
+                    <div class="enviar">
+                        <input type="submit" value="Enviar Test">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <h3>Medidas de precaución</h3>
+        <div class="precaucion">
+            <img src="img/14-lavarse-manos.png">
+            <img src="img/16-tocar-nariz.png">
+            <img src="img/15-estornudar.png">
+            <img src="img/17-ventilar.png">
+            <img src="img/18-limpiar-objetos.png">
+            <img src="img/20-reducir-contacto.png">
+            <img src="img/19-permanecer-domicilio.png">
+            <img src="img/21-no-compartir-mate.png">
+        </div>
+        <h3>Hospital más cercano especializado en la enfermedad</h3>
+        <div class="hospital-cercano">
+            <div class="nombre-hospital">
+                <h4>Nombre Hospital</h4>
+                <p>Tel.</p>
+                <p>Dirección:</p>
+                <p>Ciudad:</p>
+                <img src="img/hospital.jpg">
+            </div>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6373.052604525636!2d-58.53316569316991!3d-34.70773672255276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccf49c77b2f7b%3A0xd5052a953205c954!2sHospital%20Dr.%20Alberto%20Balestrini!5e0!3m2!1ses-419!2sar!4v1602622152385!5m2!1ses-419!2sar"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="div-footer">
+            <div class="col">
+                <h5>Integrantes</h5>
+                <ol>
+                    <li>Luciano de la Iglesia</li>
+                    <li>DNI: 40536830</li>
+                </ol>
+            </div>
+            <div class="col">
+                <h5>Menu Inferior</h5>
+                <ol>
+                    <li><a href="index.html" target="_blank">INICIO</a></li>
+                    <li><a href="enfermedades.html" target="_blank">ENFERMEDADES</a></li>
+                    <li><a href="vacunacion.html" target="_blank">VACUNACION</a></li>
+                    <li><a href="hospitales.html" target="_blank">HOSPITALES</a></li>
+                    <li><a href="contacto.html" target="_blank">CONTACTO</a></li>
+                </ol>
+            </div>
+            <div class="col">
+                <h5>Redes Sociales</h5>
+                <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png"></a>
+                <a href="https://twitter.com" target="_blank"><img src="img/twitter.png"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+
+<body>
+    <header>
+        <section id="header">
+            <h1><img src="img/logo.png"> Contacto</h1>
+            <div>
+                <form action="enfermedad.html" method="post" enctype="application/x-www-form-urlencoded"
+                    autocomplete="off" target="_blank">
+                    <input list="buscador" name="buscador">
+                    <datalist id="buscador">
+                        <option value="Enfermedad1">
+                        <option value="Enfermedad2">
+                        <option value="Enfermedad3">
+                        <option value="Enfermedad4">
+                    </datalist>
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
+        </section>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" target="_blank">INICIO</a></li>
+                <li><a href="enfermedades.html" target="_blank">ENFERMEDADES</a></li>
+                <li><a href="vacunacion.html" target="_blank">VACUNACION</a></li>
+                <li><a href="hospitales.html" target="_blank">HOSPITALES</a></li>
+                <li><a href="contacto.html" target="_blank">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Contactate con nosotros</h2>
+            <div class="contenedor">
+                <div class="div1">
+                    <form action="#" method="post" enctype="application/x-www-form-urlencoded" autocomplete="off">
+                        <div class="formulario">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="correo">Email:</label>
+                            <input type="email" id="correo" name="correo" placeholder="ejemplo@email.com" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="sexo">Sexo:</label>
+                            <input type="radio" class="sexo" name="sexo" value="Masculino">M
+                            <input type="radio" class="sexo" name="sexo" value="Femenino">F
+                            <input type="radio" class="sexo" name="sexo" value="Otro">Otro
+                        </div>
+                        <div class="formulario">
+                            <label for="number">Edad:</label>
+                            <input type="number" id="edad" name="edad" placeholder="Su edad" min="0" max="100">
+                        </div>
+                        <div class="formulario">
+                            <label for="test">Resultado del test:</label>
+                            <input type="radio" class="test" name="test" value="Positivo">+
+                            <input type="radio" class="test" name="test" value="Negativo">-
+                            <input type="radio" class="test" name="test" value="No Realizado">N/R
+                        </div>
+                        <div class="formulario">
+                            <label for="consulta">Consulta:</label><br></br>
+                            <textarea name="consulta" cols="25" row="5"></textarea>
+                        </div>
+                        <div class="enviar">
+                            <input type="submit" value="Enviar">
+                        </div>
+                </div>
+                <div class="div2">
+                    <img src=" img/asistencia.png">
+                </div>
+                <div class="div3">
+                    <h3 id="datos">Datos de contacto</h3>
+                    <p>Dirección</p>
+                    <p>Teléfonos</p>
+                    <p>Celular</p>
+                    <p>Email</p>
+                    <p>Web</p>
+                    <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="img/twitter.png"></a>
+                </div>
+            </div>
+            <div class="mapa">
+                <h3>Ubicación</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.076645007715!2d-58.39473842613543!3d-34.60789249084318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccae9d817dc6f%3A0x4b0fc2d402446a29!2sSagrado%20Coraz%C3%B3n!5e0!3m2!1ses-419!2sar!4v1602471112157!5m2!1ses-419!2sar"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="div-footer">
+            <div class="col">
+                <h5>Integrantes</h5>
+                <ol>
+                    <li>Luciano de la Iglesia</li>
+                    <li>DNI: 40536830</li>
+                </ol>
+            </div>
+            <div class="col">
+                <h5>Menu Inferior</h5>
+                <ol>
+                    <li><a href="index.html" target="_blank">INICIO</a></li>
+                    <li><a href="enfermedades.html" target="_blank">ENFERMEDADES</a></li>
+                    <li><a href="vacunacion.html" target="_blank">VACUNACION</a></li>
+                    <li><a href="hospitales.html" target="_blank">HOSPITALES</a></li>
+                    <li><a href="contacto.html" target="_blank">CONTACTO</a></li>
+                </ol>
+            </div>
+            <div class="col">
+                <h5>Redes Sociales</h5>
+                <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png"></a>
+                <a href="https://twitter.com" target="_blank"><img src="img/twitter.png"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

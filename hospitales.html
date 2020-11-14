@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hospitales</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hospitales.css">
+</head>
+
+<body>
+    <header>
+        <section id="header">
+            <h1><img src="img/logo.png"> Hospitales</h1>
+            <div>
+                <form action="enfermedad.html" method="post" enctype="application/x-www-form-urlencoded" autocomplete="off"
+                    target="_blank">
+                    <input list="buscador" name="buscador">
+                    <datalist id="buscador">
+                        <option value="Enfermedad1">
+                        <option value="Enfermedad2">
+                        <option value="Enfermedad3">
+                        <option value="Enfermedad4">
+                    </datalist>
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
+        </section>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" target="_blank">INICIO</a></li>
+                <li><a href="enfermedades.html" target="_blank">ENFERMEDADES</a></li>
+                <li><a href="vacunacion.html" target="_blank">VACUNACION</a></li>
+                <li><a href="hospitales.html" target="_blank">HOSPITALES</a></li>
+                <li><a href="contacto.html" target="_blank">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="mapa">
+            <h2>Mapa de hospitales disponibles</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d105039.98763925022!2d-58.531180059493764!3d-34.642083384241474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospitales!5e0!3m2!1ses-419!2sar!4v1602547076722!5m2!1ses-419!2sar"
+                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </main>
+    <footer>
+        <div class="div-footer">
+            <div class="col">
+                <h5>Integrantes</h5>
+                <ol>
+                    <li>Luciano de la Iglesia</li>
+                    <li>DNI: 40536830</li>
+                </ol>
+            </div>
+            <div class="col">
+                <h5>Menu Inferior</h5>
+                <ol>
+                    <li><a href="index.html" target="_blank">INICIO</a></li>
+                    <li><a href="enfermedades.html" target="_blank">ENFERMEDADES</a></li>
+                    <li><a href="vacunacion.html" target="_blank">VACUNACION</a></li>
+                    <li><a href="hospitales.html" target="_blank">HOSPITALES</a></li>
+                    <li><a href="contacto.html" target="_blank">CONTACTO</a></li>
+                </ol>
+            </div>
+            <div class="col">
+                <h5>Redes Sociales</h5>
+                <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png"></a>
+                <a href="https://twitter.com" target="_blank"><img src="img/twitter.png"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+.slider {
+    width: 60%;
+    position: relative;
+    margin: 15px auto;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.texto {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #049c7c;
+    border-top: 4px solid #03644f;
+    border-bottom: 4px solid #03644f;
+    padding: 8px 0px;
+    position: absolute;
+    bottom: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+.numeros {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #049c7c;
+    border-bottom: 2px solid #03644f;
+    border-right: 2px solid #03644f;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0px;
+}
+
+.anterior, .siguiente {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0px 3px 3px 0px;
+}
+
+.siguiente {
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+}
+
+.circulos {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.circulos div {
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    border-radius: 50%;
+    position: relative;
+}
+
+.circulos input {
+    position: absolute;
+    bottom: -35px;
+    right: 60px;
+    background-color: white;
+    border: 2px solid #03644f;
+    color: black;
+    padding: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.circulos input:hover {
+    background-color: #049c7c;
+    color: white;
+}
+
+.enfermedades {
+    background-image: url('../img/asma.jpg');
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+
+.enfermedades input {
+    right: 50px;
+}
+
+.hospitales {
+    background-image: url('../img/hospital.png');
+    background-size: 210px;
+    background-repeat: no-repeat;
+}
+
+.vacunacion {
+    background-image: url('../img/vacuna.png');
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-color: #03644f;
+}
+
+.vacunacion input {
+    right: 55px;
+}
+
+.a148 {
+    margin: 25px auto;
+    padding: 50px;
+    font-weight: bold;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #049c7c;
+    color: black;
+    font-size: 2em;
+    border-radius: 5px;
+}
+
+.llama {
+    font-size: 3em;
+}
+
+.tel {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 25%;
+    font-size: 3em;
+}
+
+
+.tel img {
+    width: 100%;
+}
